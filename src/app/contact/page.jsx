@@ -39,16 +39,16 @@ return (
       <div className="flex justify-between py-[40px] gap-10 ">
         <form className='w-[50%] flex flex-col gap-4 ' action="#">
           <input
-            className='w-full h-[45px] bg-[#D2DAED2B] outline-none rounded-[30px] px-[20px] text-[16px] font-[500] leading-[100%] tracking-0 '
+            className='w-full h-[45px] bg-[#D2DAED2B] outline-none rounded-[30px] px-[20px] text-gray-500 text-[16px] font-[500] leading-[100%] tracking-0 '
             placeholder='First Name' type="text" />
           <input
-            className='w-full h-[45px] bg-[#D2DAED2B] outline-none rounded-[30px] px-[20px] text-[16px] font-[500] leading-[100%] tracking-0 '
+            className='w-full h-[45px] bg-[#D2DAED2B] outline-none rounded-[30px] px-[20px] text-gray-500 text-[16px] font-[500] leading-[100%] tracking-0 '
             placeholder='Last Name' type="text" />
           <input
-            className='w-full h-[45px] bg-[#D2DAED2B] outline-none rounded-[30px] px-[20px] text-[16px] font-[500] leading-[100%] tracking-0 '
+            className='w-full h-[45px] bg-[#D2DAED2B] outline-none rounded-[30px] px-[20px] text-gray-500 text-[16px] font-[500] leading-[100%] tracking-0 '
             placeholder='Email address' type="email" />
           <textarea
-            className='w-full h-[140px] bg-[#D2DAED2B] outline-none rounded-[30px] px-[20px] py-[20px] text-[16px] font-[500] leading-[100%] tracking-0 '
+            className='w-full h-[140px] bg-[#D2DAED2B] outline-none rounded-[30px] px-[20px] text-gray-500 py-[20px] text-[16px] font-[500] leading-[100%] tracking-0 '
             placeholder='Type message'></textarea>
         </form>
         <div className="w-[50%] rounded-lg overflow-hidden">
