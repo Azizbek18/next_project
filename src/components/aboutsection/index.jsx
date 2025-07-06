@@ -20,26 +20,26 @@ return (
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Curabitur sit amet eros blandit, hendrerit elit br
                 et, mattis  purus. Vivamus commodo suscipit tellus et  pellentesque.
             </p>
-            <div className="flex justify-center gap-10 lg:justify-between ">
+            <div className="flex flex-col lg:flex-row justify-center gap-10 lg:justify-between ">
                 <div className="">
-                    <h4 className={`${inter.className} font-[700] text-[36px] text-[#F58A07] leading-[50px] tracking-[0px] `}>
+                    <h4 className={`${inter.className} font-[700] text-center lg:text-start text-[36px] text-[#F58A07] leading-[50px] tracking-[0px] `}>
                     15+
                     </h4>
-                    <h4 className='font-poppins font-[600] text-[24px] leading-[107%] tracking-[-3%] '>
+                    <h4 className='font-poppins font-[600] text-center lg:text-start text-[24px] leading-[107%] tracking-[-3%] '>
                         Awards received
                     </h4>
-                    <p className='font-poppins py-[20px] font-[500] text-[16px] leading-[28px] tracking-[0px] text-[#5B5B5B] '>
+                    <p className='font-poppins text-center lg:text-start py-[20px] font-[500] text-[16px] leading-[28px] tracking-[0px] text-[#5B5B5B] '>
                         Lorem ipsum dolor sit amet,  consectetur adipiscin. Curabitur  sit amet eros elit et.
                     </p>
                 </div>
                 <div className="">
-                    <h4 className={`${inter.className} font-[700] text-[36px] text-[#F58A07] leading-[50px] tracking-[0px] `}>
+                    <h4 className={`${inter.className} font-[700] text-center lg:text-start text-[36px] text-[#F58A07] leading-[50px] tracking-[0px] `}>
                     500+
                     </h4>
-                    <h4 className='font-poppins font-[600] text-[24px] leading-[107%] tracking-[-3%] '>
+                    <h4 className='font-poppins text-center lg:text-start font-[600] text-[24px] leading-[107%] tracking-[-3%] '>
                     Clients served
                     </h4>
-                    <p className='font-poppins py-[20px] font-[500] text-[16px] leading-[28px] tracking-[0px] text-[#5B5B5B] '>
+                    <p className='font-poppins text-center lg:text-start py-[20px] font-[500] text-[16px] leading-[28px] tracking-[0px] text-[#5B5B5B] '>
                     Lorem ipsum dolor sit amet,  consectetur adipiscin. Curabitur  sit amet eros elit et.
                     </p>
                 </div>

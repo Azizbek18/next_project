@@ -31,7 +31,7 @@ function HelpSection() {
             <ul className='grid grid-cols-1 lg:grid-cols-3  gap-10 mt-8'>
             {
                 infor.map((item,index)=>(
-                    <li className='flex flex-col lg:items-start ' key={index}>
+                    <li className='flex flex-col items-center lg:items-start ' key={index}>
                         <div className="w-full lg:w-[400px] h-[240px] sm:h-[350px] lg:h-[280px] rounded-[20px] overflow-hidden ">
                             <img className='w-full h-full overflow-hidden object-cover ' src={item.img} alt="Help section photo" />
                         </div>
