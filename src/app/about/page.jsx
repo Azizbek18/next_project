@@ -1,6 +1,7 @@
 import React from 'react'
 import { Inter } from 'next/font/google'
-import Image from 'next/image'
+import VideoSectionPage from '@/components/videosection'
+import LatestSection from '@/components/latestsection'
 
 const inter = Inter(
 {
@@ -12,7 +13,7 @@ weight: '700',
 function AboutPage() {
 return (
 <div>
-  <div className="container max-w-[1280px] mx-auto ">
+  <div className="container py-[40px] max-w-[1280px] mx-auto ">
     <div className="flex relative justify-between items-center py-[60px] ">
       <img className='absolute bottom-[10px] right-[-50px] ' src="/images/circle.svg" alt="circle" />
       <div className="w-[50%] ">
@@ -113,22 +114,85 @@ return (
           alt="About section photo" />
       </div>
     </div>
-    <div className="">
-      <h3>
-        Teamwork is the only way we work
+    <div className="py-[20px] ">
+      <h3 className='font-poppins py-[10px] font-[600] text-[48px] leading-[56px] tracking-[-3%] '>
+        Teamwork is the only <br /> way we work
       </h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et,
-        mattis purus. Vivamus commodo suscipit tellus et pellentesque.
+      <p className='font-poppins py-[10px] mb-12 text-[#5B5B5B] font-[500] text-[18px] leading-[30px] tracking-[0px] '>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros <br /> blandit, hendrerit elit
+        et,
+        mattis purus. Vivamus commodo suscipit tellus et <br /> pellentesque.
       </p>
-      <div className="">
-        <div className="relative w-[290px] h-[521px] rounded-xl overflow-hidden">
-          <Image src="/images/avatar1.png" alt="Avatar1" fill
-            className="object-cover object-center filter grayscale" />
+      <div className="flex justify-between">
+        <div className="w-[290px] h-[480px] relative group rounded-[20px] overflow-hidden">
+          <img src="/images/avatar1.png" alt="avatar"
+            className="w-full h-[120%] object-cover object-[top] origin-[50%_20%] filter grayscale transform scale-[1.5]" />
+            <div
+            className="absolute top-[280px] w-[290px] rounded-[20px] h-[200px] bg-black p-5 z-10 transform translate-y-[200px] transition-all duration-[800ms] ease-in-out group-hover:translate-y-0">
+            <h5 className='font-poppins py-1 font-[600] text-[16px] text-white leading-[16px] trancing-[0px] '>
+            Support Assist
+            </h5>
+            <h3 className='font-poppins py-2 font-[600] text-[24px] text-white leading-[32px] trancing-[0px]'>
+            Selby Stuart
+            </h3>
+            <p className='font-poppins font-[500] text-white text-[16px] leading-[199%] trancing-[0px]'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros.
+            </p>
+          </div>
+        </div>
+        <div className="w-[290px] h-[480px] relative group rounded-[20px] overflow-hidden">
+          <img src="/images/avatar2.png" alt="avatar"
+            className="w-full h-[100%] object-cover object-[top] origin-[50%_20%] filter grayscale" />
+            <div
+            className="absolute top-[280px] w-[290px] rounded-[20px] h-[200px] bg-black p-5 z-10 transform translate-y-[200px] transition-all duration-[800ms] ease-in-out group-hover:translate-y-0">
+            <h5 className='font-poppins py-1 font-[600] text-[16px] text-white leading-[16px] trancing-[0px] '>
+            Support Assist
+            </h5>
+            <h3 className='font-poppins py-2 font-[600] text-[24px] text-white leading-[32px] trancing-[0px]'>
+            Adrian Bennett
+            </h3>
+            <p className='font-poppins font-[500] text-white text-[16px] leading-[199%] trancing-[0px]'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros.
+            </p>
+          </div>
+        </div>
+        <div className="w-[290px] h-[480px] relative group rounded-[20px] overflow-hidden">
+          <img src="/images/avatar3.png" alt="avatar"
+            className="w-full h-[100%] object-cover object-[top]  filter grayscale " />
+            <div
+            className="absolute top-[280px] w-[290px] rounded-[20px] h-[200px] bg-black p-5 z-10 transform translate-y-[200px] transition-all duration-[800ms] ease-in-out group-hover:translate-y-0">
+            <h5 className='font-poppins py-1 font-[600] text-[16px] text-white leading-[16px] trancing-[0px] '>
+            Support Assist
+            </h5>
+            <h3 className='font-poppins py-2 font-[600] text-[24px] text-white leading-[32px] trancing-[0px]'>
+            Marcus Lee
+            </h3>
+            <p className='font-poppins font-[500] text-white text-[16px] leading-[199%] trancing-[0px]'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros.
+            </p>
+          </div>
+        </div>
+        <div className="w-[290px] h-[480px] relative  group rounded-[20px] overflow-hidden">
+          <img src="/images/avatar4.png" alt="avatar"
+            className="w-full h-[100%] object-cover object-[top] origin-[50%_20%] filter grayscale" />
+          <div
+            className="absolute top-[280px] w-[290px] rounded-[20px] h-[200px] bg-black p-5 z-10 transform translate-y-[200px] transition-all duration-[800ms] ease-in-out group-hover:translate-y-0">
+            <h5 className='font-poppins py-1 font-[600] text-[16px] text-white leading-[16px] trancing-[0px] '>
+            Support Assist
+            </h5>
+            <h3 className='font-poppins py-2 font-[600] text-[24px] text-white leading-[32px] trancing-[0px]'>
+            Thomas Carter
+            </h3>
+            <p className='font-poppins font-[500] text-white text-[16px] leading-[199%] trancing-[0px]'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <VideoSectionPage/>
+  <LatestSection/>
 </div>
 )
 }

@@ -21,27 +21,27 @@ function HelpSection() {
     ]
   return (
     <div>
-        <div className="container max-w-[1280px] mx-auto py-[80px] ">
-            <h2 className='font-poppins font-[600] text-[48px] text-[#1D3444] leading-[56px] tracking-[-3%] '>
-            We help more than 1500  <br />companies from all sectors
+        <div className="container px-[20px] max-w-[1280px] mx-auto py-[80px] ">
+            <h2 className='font-poppins lg:pr-[500px] text-center lg:text-start font-[600] text-[40px] sm:text-[44px] md:text-[46px] lg:text-[48px] text-[#1D3444] leading-[56px] tracking-[-3%] '>
+            We help more than 1500 companies from all sectors
             </h2>
-            <p className='font-poppins py-5 font-[500] text-[18px] leading-[30px] tracking-[0%] text-[#5B5B5B] '>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros <br /> blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et <br /> pellentesque.
+            <p className='font-poppins text-center lg:text-start lg:pr-[560px]  py-5 font-[500] text-[18px] leading-[30px] tracking-[0%] text-[#5B5B5B] '>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros  blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et  pellentesque.
             </p>
-            <ul className='flex mt-8 justify-between'>
+            <ul className='grid grid-cols-1 lg:grid-cols-3  gap-10 mt-8'>
             {
                 infor.map((item,index)=>(
-                    <li className='' key={index}>
-                        <div className="w-[400px] h-[280px] rounded-[20px] overflow-hidden ">
+                    <li className='flex flex-col lg:items-start ' key={index}>
+                        <div className="w-full lg:w-[400px] h-[240px] sm:h-[350px] lg:h-[280px] rounded-[20px] overflow-hidden ">
                             <img className='w-full h-full overflow-hidden object-cover ' src={item.img} alt="Help section photo" />
                         </div>
-                        <h3 className='mt-7 font-poppins font-[500] text-[24px] leading-[103%] tracking-[-3%] '>
+                        <h3 className='mt-7 font-poppins text-center lg:text-start font-[500] text-[24px] leading-[103%] tracking-[-3%] '>
                             {item.title}
                         </h3>
-                        <p className='w-[400px] py-4 font-[500] text-[18px] leading-[28px] tracking-[0%] text-[#5B5B5B] '>
+                        <p className='w-full lg:w-[400px] py-4 text-center lg:text-start font-[500] text-[18px] leading-[28px] tracking-[0%] text-[#5B5B5B] '>
                             {item.text}
                         </p>
-                        <button className='flex gap-2 items-center '>
+                        <button className='flex  gap-2 items-center '>
                             <p className='font-[500] text-[16px] leading-[107%] tracking-[0%] text-[#F58A07] '>
                             Learn More
                             </p>

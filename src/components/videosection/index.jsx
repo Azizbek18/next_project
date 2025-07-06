@@ -6,16 +6,16 @@ function VideoSectionPage() {
 const [play,setPlay] = useState(false);
 return (
 <div>
-  <div className="container py-[80px] flex justify-between items-center mx-auto max-w-[1280px] ">
-    <div className="w-[40%] ">
-      <h3 className='font-poppins font-[600] text-[48px] leading-[56px] tracking-[-3%] '>
+  <div className="container px-[20px] py-[80px] flex flex-col lg:flex-row justify-between items-center mx-auto max-w-[1280px] ">
+    <div className="w-full lg:w-[40%] ">
+      <h3 className='font-poppins text-center lg:text-start py-[15px] font-[600] text-[48px] leading-[56px] tracking-[-3%] '>
         Finsweet was a dream to work with
       </h3>
-      <p className='font-poppins font-[500] text-[17px] py-[5px] text-[#5B5B5B] leading-[30px] tracking-[0px] '>
+      <p className='font-poppins text-center lg:text-start font-[500] text-[17px] py-[5px] text-[#5B5B5B] leading-[30px] tracking-[0px] '>
         Maecenas efficitur scelerisque lorem, et varius lacus tincidunt vel. Pellentesque a arcu vitae diam dapibus
         mattis vel vel orci. Vivamus eleifend nec felis vel auctor.
       </p>
-      <div className="flex py-[25px] items-center gap-4 ">
+      <div className="flex py-[25px] justify-center lg:justify-start items-center gap-4 ">
         <div className="w-[40px] h-[40px] relative rounded-[50%] overflow-hidden ">
           <Image className='object-cover' fill src='/images/img.png' alt='avatar' />
         </div>
@@ -29,7 +29,7 @@ return (
         </div>
       </div>
     </div>
-    <div className="w-[50%] ">
+    <div className="w-full lg:w-[50%] ">
       <div className="w-full rounded-xl overflow-hidden relative">
         {play ? (
         <video controls autoPlay className="w-full h-auto">
@@ -39,7 +39,7 @@ return (
         <div onClick={()=> setPlay(true)}
           className="relative cursor-pointer group"
           >
-          <img src="/images/microfon.png" alt="Video preview" className="w-full h-[500px] rounded-[20px] object-cover" />
+          <img src="/images/microfon.png" alt="Video preview" className="w-full h-[350px] lg:h-[500px] rounded-[20px] object-cover" />
           <div className="absolute bottom-10 left-10 flex items-center gap-4 px-3  rounded-full">
             <div className="bg-white rounded-[50%] w-[40px] h-[40px] flex justify-center items-center ">
             <img src="/images/uchburchak.svg" alt="uchburchak " />
